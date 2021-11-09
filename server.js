@@ -14,7 +14,6 @@ const {makeExecutableSchema} = require('@graphql-tools/schema');
 
 dotenv.config();
 
-
 // Create the base executable schema
 let schema = makeExecutableSchema({
     typeDefs,

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const development = {
     use_env_variable: 'DATABASE_URL',
     url: process.env.DATABASE_URL,
@@ -18,7 +19,7 @@ const production = {
 
 const test = {
     use_env_variable: 'DATABASE_URL',
-    url: process.env.DATABASE_URL,
+    url: process.env.TEST_DATABASE_URL,
     dialect: 'postgres',
     dialectOptions: {
         ssl: false
