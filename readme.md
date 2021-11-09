@@ -23,11 +23,18 @@ JWTSECRET="Your jwt secret here"
 TOKENEXPIRESIN="When token expires e.g 24h"
 DATABASE_URL=""
 PORT=4000
+```
+#### Environment Variables (when running with Docker)
+```
+JWTSECRET="somesecret"
+TOKENEXPIRESIN="7h"
+DATABASE_URL=postgres://postgres:postgres@postgress-db:5432/homelike
+PORT=4000
 
-# Set if running with docker
-POSTGRES_PASSWORD=
-POSTGRES_USER=
-POSTGRES_DB=
+POSTGRES_PASSWORD=postgres
+POSTGRES_USER=postgres
+POSTGRES_DB=homelike
+
 ```
 
 #### Running the API Directly
