@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  api:
+    build:
+      context: ""
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./:/usr/mainsrc/app
+    depends_on:
+      - postgress-db
+    ports:
+      - 4000:4000
+
+  postgress-db:
+    image: postgres
+    env_file:
+      - .env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  adminer:
+    image: adminer
+    restart: always
+    depends_on:
+      - postgress-db
+    ports:
+      - 4040:8080
+
+volumes:
+  postgres:

@@ -1,0 +1,41 @@
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+logfile
+# API keys and secrets
+.env
+pgdata
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+.vscode
+*.iml
+modules.xml
+*.ipr
+
+
+# OS metadata
+.DS_Store
+Thumbs.db
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+
+.env/.production/.pgadmin
+.env/.production/.postgres
+.env/.test/.pgadmin
+.env/.test/.postgres
