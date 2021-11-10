@@ -1,4 +1,5 @@
 import {AuthenticationError} from "apollo-server";
+import {defaultFieldResolver} from "graphql";
 
 const {mapSchema, getDirective, MapperKind} = require('@graphql-tools/utils');
 
@@ -14,7 +15,6 @@ export const authDirectiveTransformer = (schema, directiveName) => {
             const authDirective = getDirective(schema, fieldConfig, directiveName)?.[0];
 
             if (authDirective) {
-
                 // Get this field's original resolver
                 const {resolve = defaultFieldResolver} = fieldConfig;
 

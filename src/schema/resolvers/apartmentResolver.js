@@ -2,9 +2,6 @@ import apartmentService from "../../services/apartmentService";
 
 const resolvers = {
     Query: {
-        apartments: (parent, args, ctx) => {
-            return apartmentService.getApartments(args, ctx)
-        },
         apartment: (parent, args, ctx) => {
             return apartmentService.getApartment(args.id, ctx)
         },

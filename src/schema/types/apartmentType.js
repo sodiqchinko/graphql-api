@@ -83,7 +83,6 @@ const typeDefs = `
   
 
   type Query {
-    apartments: ApartmentPagination!  @auth
     apartment(name: String!): Apartment!  @auth
     searchApartment(page: Int, city: String, state: String, country: String, noRooms: Int, geoLocation: GeoLocation ): ApartmentPagination!
   }

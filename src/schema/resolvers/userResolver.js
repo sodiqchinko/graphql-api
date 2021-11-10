@@ -7,6 +7,12 @@ const resolvers = {
         },
     },
 
+    Apartment: {
+        owner: (parent, args, ctx) => {
+            return userService.getUser(parent.owner, ctx)
+        },
+    },
+
     Query: {
         users: async (parent, args, ctx) => {
             return userService.getUsers(args, ctx)
