@@ -1,4 +1,4 @@
-# Homelike API
+# GraphQL API
 
 Running the backend graphQL API
 
