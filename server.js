@@ -20,6 +20,7 @@ let schema = makeExecutableSchema({
     resolvers
 });
 
+
 // Transform the schema by applying directive logic
 schema = authDirectiveTransformer(schema, 'auth');
 
