@@ -13,7 +13,7 @@
     "@babel/node": "^7.16.0",
     "@graphql-tools/merge": "latest",
     "@graphql-tools/schema": "latest",
-    "@graphql-tools/utils": "latest",
+    "@graphql-tools/utils": "8.13.1",
     "apollo-server": "^3.1.2",
     "apollo-server-core": "^3.4.0",
     "apollo-server-express": "^3.4.0",
